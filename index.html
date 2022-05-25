@@ -34,12 +34,11 @@
             <div class="form-group">
                 <div class="input-group input-group-lg">
                     <span class="input-group-addon" id="sizing-addon1">CPF</span>
-                    <input type="text" class="form-control" placeholder="Digite o cpf para validação ..."
-                        aria-describedby="sizing-addon1">
+                    <input type="text" class="form-control" placeholder="Digite o cpf para validação ..." aria-describedby="sizing-addon1" id="cpf_digitado">
                 </div>
                 <small class="form-text text-muted">Digite somente numeros</small>
             </div>
-            <button type="button" class="btn btn-info">Validar !</button>
+            <button type="button" class="btn btn-info" onclick="validacao()">Validar !</button>
         </form>
     </div>
     <div class="container page-header">
@@ -47,7 +46,7 @@
             <strong>Oba!</strong> Seu CPF é válido
         </div>
         <div id="error" class="alert alert-danger" style="display: none;" role="alert">
-            <strong>Ops!</strong> Seu CPF não é válido
+            <strong>Ops!</strong> Seu CPF não é válido.
         </div>
     </div>
 
@@ -59,6 +58,8 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"></script>
+
+<script src="./script.js"></script>    
 
 
 
