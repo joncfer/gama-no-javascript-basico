@@ -32,6 +32,8 @@ function validacaoCPF(cpf){
 
         resultado = (soma % 11) < 2? 0 : 11 - (soma % 11);
 
+        // Validação do segundo dígito.
+
         if(resultado != digitos.charAt(1)){
             return false;
         }
@@ -43,7 +45,6 @@ function validacao(){
     console.log("Iniciando validacao de CPF.");
 
     document.getElementById("success").style.display = "none";
-
     document.getElementById("error").style.display = "none";
 
     var cpf = document.getElementById("cpf_digitado").value;
